@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>EduTask | Dashboard</title>
+
+    <link
+        rel="stylesheet"
+        href="/css/style.css"
+    >
+
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+
+        <aside class="sidebar">
+
+            <div class="sidebar-logo">
+                EduTask
+            </div>
+
+            <nav class="sidebar-menu">
+
+                <a
+                    href="/dashboard"
+                    class="menu-item active"
+                >
+                    Dashboard
+                </a>
+
+                <a
+                    href="#"
+                    class="menu-item"
+                >
+                    Tarefas
+                </a>
+
+                <a
+                    href="/disciplinas"
+                    class="menu-item"
+                >
+                    Disciplinas
+                </a>
+
+                <a
+                    href="#"
+                    class="menu-item"
+                >
+                    Provas
+                </a>
+
+                <a
+                    href="#"
+                    class="menu-item"
+                >
+                    Calendário
+                </a>
+
+            </nav>
+
+            <form
+                action="/usuarios/logout"
+                method="POST"
+                class="logout-form"
+            >
+
+                <button
+                    type="submit"
+                    class="logout-button"
+                >
+                    Sair
+                </button>
+
+            </form>
+
+        </aside>
+
+
+        <main class="dashboard-content">
+
+            <header class="dashboard-header">
+
+                <div>
+
+                    <p class="welcome-small">
+                        Bem-vindo ao EduTask
+                    </p>
+
+                    <h1>
+                        Olá,
+                        <span id="nomeUsuario">
+                            estudante
+                        </span>!
+                    </h1>
+
+                </div>
+
+            </header>
+
+
+            <section class="cards">
+
+                <article class="dashboard-card">
+
+                    <span class="card-label">
+                        Tarefas pendentes
+                    </span>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </article>
+
+
+                <article class="dashboard-card">
+
+                    <span class="card-label">
+                        Concluídas
+                    </span>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </article>
+
+
+                <article class="dashboard-card">
+
+                    <span class="card-label">
+                        Atrasadas
+                    </span>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </article>
+
+
+                <article class="dashboard-card">
+
+                    <span class="card-label">
+                        Próximas provas
+                    </span>
+
+                    <strong>
+                        0
+                    </strong>
+
+                </article>
+
+            </section>
+
+
+            <section class="dashboard-section">
+
+                <div class="section-header">
+
+                    <h2>
+                        Próximas atividades
+                    </h2>
+
+                </div>
+
+                <div class="empty-state">
+
+                    <h3>
+                        Nenhuma atividade cadastrada
+                    </h3>
+
+                    <p>
+                        Suas próximas tarefas aparecerão aqui.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="/js/dashboard.js"></script>
+
+</body>
+
+</html>
